@@ -42,6 +42,7 @@ For "File type" select "HTML Document (.html)"
 
 ![Basic Libre Office Example](../gifs/Basic_LibreOffice_Example.gif)
 
+
 ## Code Highlighting
 
 This parser support code highlighting using the Pygments library.
@@ -51,13 +52,13 @@ This parser support code highlighting using the Pygments library.
 Example syntax below:
 
 ```org
-* Give me some basic python
-```python3
-print("Hello world!")
+	* Give me some basic python
+	```python3
+	print("Hello world!")
 
-if (True):
-    print("Even indents!")
-```
+	if (True):
+		print("Even indents!")
+	```
 ```
 
 
