@@ -3,6 +3,7 @@
 
 1. [File syntax](#File-syntax) 
 2. [Saving files](#Saving-Word-or-LibreOffice-files) 
+3. [Code Highlighting](#code-highlighting)
 
 ## File syntax
 
@@ -40,3 +41,24 @@ For "File type" select "HTML Document (.html)"
 ### Basic example
 
 ![Basic Libre Office Example](../gifs/Basic_LibreOffice_Example.gif)
+
+## Code Highlighting
+
+This parser support code highlighting using the Pygments library.
+
+[Supported Languages](http://pygments.org/languages/)
+
+Example syntax below:
+
+```org
+* Give me some basic python
+\`\`\`python3
+print("Hello world!")
+
+if (True):
+    print("Even indents!")
+\`\`\`
+
+```
+
+This would produce the following card:

@@ -9,6 +9,7 @@
 2. [Adding images](#Adding-images) 
 3. [HTML code and LaTeX](#html-code-and-latex)
 4. [Supported parameters](#Supported-parameters) 
+5. [Code Highlighting](#code-highlighting)
 
 ## Basic syntax
 
@@ -344,3 +345,25 @@ This is shortened as follows
 
 * Questions and decks will inhert parameters from parent Decks
 * Parameters inhereted will not override existing parameters.
+
+
+## Code Highlighting
+
+This parser support code highlighting using the Pygments library.
+
+[Supported Languages](http://pygments.org/languages/)
+
+Example syntax below:
+
+```org
+* Give me some basic python
+\`\`\`python3
+print("Hello world!")
+
+if (True):
+    print("Even indents!")
+\`\`\`
+
+```
+
+This would produce the following card:
